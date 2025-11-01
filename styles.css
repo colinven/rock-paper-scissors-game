@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2D2D30;
+}
+#container {
+    background-color: #3E3E42;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: #CCCCCC;
+    padding: 15px 25px;
+}
+h1 {
+    margin: 10px 10px 20px 10px;
+    font-size: 1.9rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#displaycontainer {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    background-color: #57575c;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.displaybox {
+    width: 100px;
+    font-size: 3rem;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #2D2D30;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: #CCCCCC;
+}
+#displaylabels {
+    display: flex;
+    justify-content: space-around;
+}
+#displaylabels p {
+    margin: 5px 20px;
+    font-weight: 800;
+}
+h2 {
+    margin: 20px 0 10px 0;
+    font-size: 1rem;
+}
+#scoreboard {
+    width: 225px;
+    display: flex;
+    margin: 10px auto 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2D2D30;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#resultdisplay {
+    text-align: center;
+    background-color:#3E3E42;
+    color: #CCCCCC;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    cursor: pointer;
+}
+button:hover, button:active {
+    background-color: #353538;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.scoredisplay {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: none;
+    background-color: #2D2D30;
+    color: #CCCCCC;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#choicecontainer {
+    background-color: #57575c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.choice {
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #2D2D30;
+    border-radius: 10px;
+    color: #CCCCCC;
+}
+#resetgame {
+    display: block;
+    margin: 20px auto 10px auto;
+    padding: 5px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #CCCCCC;
+    border: none;
+    border-radius: 5px;
+    background-color: #2D2D30;
+}

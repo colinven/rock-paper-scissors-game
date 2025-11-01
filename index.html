@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Rock Paper Scissors</h1>
+        <div id="displaycontainer">
+            <input class="displaybox" id="playerdisplay" placeholder="&#129704" readonly>
+            <input class="displaybox" id="cpudisplay" value="&#9986" readonly>
+        </div>
+        <div id="displaylabels">
+            <p>You</p>
+            <p>CPU</p>
+        </div>
+        <h2>Scoreboard</h2>
+        <div id="scoreboard">
+            <p>You:</p>
+            <input class="scoredisplay" id="playerscore" readonly value="0">
+            <p>CPU:</p>
+            <input class="scoredisplay" id="cpuscore" readonly value="0">
+        </div>
+        <input id="resultdisplay" readonly value="You won this round!">
+        <h2>Make Your Choice:</h2>
+        <div id="choicecontainer">
+            <button class="choice" id="rockbutton">&#129704</button>
+            <button class="choice" id="paperbutton">&#128196</button>
+            <button class="choice" id="scissorsbutton">&#9986</button>
+        </div>
+        <button id="resetgame">Reset Score</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
