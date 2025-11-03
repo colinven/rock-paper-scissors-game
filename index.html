@@ -13,8 +13,8 @@
     <div id="container">
         <h1>Rock Paper Scissors</h1>
         <div id="displaycontainer">
-            <input class="displaybox" id="playerdisplay" placeholder="&#129704" readonly>
-            <input class="displaybox" id="cpudisplay" value="&#9986" readonly>
+            <input class="displaybox" id="userdisplay" readonly>
+            <input class="displaybox" id="computerdisplay" readonly>
         </div>
         <div id="displaylabels">
             <p>You</p>
@@ -23,18 +23,18 @@
         <h2>Scoreboard</h2>
         <div id="scoreboard">
             <p>You:</p>
-            <input class="scoredisplay" id="playerscore" readonly value="0">
+            <input class="scoredisplay" id="userscore" readonly value="0">
             <p>CPU:</p>
-            <input class="scoredisplay" id="cpuscore" readonly value="0">
+            <input class="scoredisplay" id="computerscore" readonly value="0">
         </div>
-        <input id="resultdisplay" readonly value="You won this round!">
+        <input id="resultdisplay" readonly>
         <h2>Make Your Choice:</h2>
         <div id="choicecontainer">
-            <button class="choice" id="rockbutton">&#129704</button>
-            <button class="choice" id="paperbutton">&#128196</button>
-            <button class="choice" id="scissorsbutton">&#9986</button>
+            <button class="choice" id="rock">&#129704</button>
+            <button class="choice" id="paper">&#128196</button>
+            <button class="choice" id="scissors">&#9986</button>
         </div>
-        <button id="resetgame">Reset Score</button>
+        <button id="resetscore">Reset Score</button>
     </div>
     <script src="script.js"></script>
 </body>
