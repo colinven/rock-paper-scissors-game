@@ -47,16 +47,32 @@ function playGame(event){
     const userChoice = event.target.id;
     const computerChoice = getComputerChoice();
   
-// append user and computer choice to display
+    const cpuEmojis = [rock.textContent, paper.textContent, scissors.textContent];
+    let index = 0;
+
+    computerDisplay.classList.add('shaking');
+    const intervalId = setInterval(() => {
+        computerDisplay.value = cpuEmojis[index];
+        index = (index + 1) % cpuEmojis.length;
+    }, 150);
+
     userDisplay.value = event.target.textContent;
-    if (computerChoice === 'rock'){
-        computerDisplay.value = rock.textContent;
-    } else if (computerChoice === 'paper'){
-        computerDisplay.value = paper.textContent;
-    } else if (computerChoice === 'scissors'){
-        computerDisplay.value = scissors.textContent;
-    }
-    resultMessage.value = determineWinner(userChoice, computerChoice);
+
+    setTimeout(() => {
+        clearInterval(intervalId);
+        computerDisplay.classList.remove('shaking');
+
+        if (computerChoice === 'rock'){
+            computerDisplay.value = rock.textContent;
+        } else if (computerChoice === 'paper'){
+            computerDisplay.value = paper.textContent;
+        } else if (computerChoice === 'scissors'){
+            computerDisplay.value = scissors.textContent;
+        }
+        resultMessage.value = determineWinner(userChoice, computerChoice);
+    }, 1000)
+// append user and computer choice to display
+    
 }   
 
 function resetScore(){
