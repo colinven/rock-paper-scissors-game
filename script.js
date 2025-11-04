@@ -60,8 +60,11 @@ function playGame(event){
 }   
 
 function resetScore(){
-    userScore = '0';
-    userScoreElement.value = userScore;
-    computerScore = '0';
-    computerScoreElement.value = computerScore;
+    userScore = 1;
+    userScoreElement.value = 0;
+    computerScore = 1;
+    computerScoreElement.value = 0;
+    resultMessage.value = '';
+    userDisplay.value = '';
+    computerDisplay.value = '';
 }
