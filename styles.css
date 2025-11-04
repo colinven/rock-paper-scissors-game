@@ -105,7 +105,7 @@ button:hover, button:active {
     border-radius: 10px;
     color: #CCCCCC;
 }
-#resetgame {
+#resetscore {
     display: block;
     margin: 20px auto 10px auto;
     padding: 5px 15px;
